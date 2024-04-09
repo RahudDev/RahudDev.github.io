@@ -1,1 +1,1 @@
-https://github.com/RahudDev/RahudDev.github.io
+RahudDev.github.io
