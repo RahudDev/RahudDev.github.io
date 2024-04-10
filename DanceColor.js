@@ -58,22 +58,4 @@ function frame(timestamp) {
     }
 }
 
-// Your existing JavaScript functions
-// Add your existing JavaScript code here
-
-// New JavaScript to hide/show scrollbar based on content height
-function adjustScrollbarVisibility() {
-    if (document.body.scrollHeight <= window.innerHeight) {
-        document.body.classList.add("hide-scrollbar");
-    } else {
-        document.body.classList.remove("hide-scrollbar");
-    }
-}
-
-// Run once when the page is loaded
-adjustScrollbarVisibility();
-
-// Also run whenever the window is resized
-window.onresize = adjustScrollbarVisibility;
-
 
