@@ -13,7 +13,7 @@
        <p>Let's Dance and Play!</p>
       <button id="danceButton">Dance</button>
       <button id="pauseButton">Pause</button>
-      <audio id="djMusic" src="TrendSetter.mp3"></audio>
+      <audio id="djMusic" src="RahudDev.github.io/TrendSetter.mp3"></audio>
     </div>
 
     <script src="Animation3.js"></script>
