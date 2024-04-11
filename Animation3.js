@@ -300,10 +300,10 @@ function createMobileControls() {
   controlsContainer.style.left = '50%';
   controlsContainer.style.transform = 'translateX(-50%)';
   controlsContainer.innerHTML = `
-      <button id="left-btn">Left</button>
-      <button id="up-btn">Up</button>
-      <button id="right-btn">Right</button>
-      <button id="down-btn">Down</button>
+      <button id="left-btn"> ← </button>
+      <button id="up-btn"> ↑ </button>
+      <button id="right-btn"> → </button>
+      <button id="down-btn"> ↓ </button>
   `;
   document.body.appendChild(controlsContainer);
 
