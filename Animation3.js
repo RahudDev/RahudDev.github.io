@@ -288,6 +288,38 @@ window.onkeydown = function (e) {
   
 }
 
+
+function isMobileDevice() {
+    return ('ontouchstart' in window || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0);
+}
+
+function createMobileControls() {
+    const controlsContainer = document.createElement('div');
+    controlsContainer.id = 'mobile-controls';
+    controlsContainer.style.position = 'fixed';
+    controlsContainer.style.bottom = '20px';
+    controlsContainer.style.left = '50%';
+    controlsContainer.style.transform = 'translateX(-50%)';
+    controlsContainer.innerHTML = `
+        <button id="left-btn">Left</button>
+        <button id="up-btn">Up</button>
+        <button id="right-btn">Right</button>
+        <button id="down-btn">Down</button>
+    `;
+    document.body.appendChild(controlsContainer);
+
+    // Event listeners for the buttons
+    document.getElementById('left-btn').addEventListener('touchstart', function(e) { e.preventDefault(); pacman.move_left(); });
+    document.getElementById('up-btn').addEventListener('touchstart', function(e) { e.preventDefault(); pacman.move_up(); });
+    document.getElementById('right-btn').addEventListener('touchstart', function(e) { e.preventDefault(); pacman.move_right(); });
+    document.getElementById('down-btn').addEventListener('touchstart', function(e) { e.preventDefault(); pacman.move_down(); });
+}
+
+if (isMobileDevice()) {
+    createMobileControls();
+}
+
+
 //animation ghost {pacman}
 var draw_ghost_2 = function (ctx, radius, options) {
   options = options || {};
