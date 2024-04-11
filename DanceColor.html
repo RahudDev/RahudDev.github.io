@@ -15,6 +15,7 @@
       <button id="pauseButton">Pause</button>
       <audio id="djMusic" src="https://od.lk/s/NjFfODIzMzY2ODNf/TrendSetter.mp3"></audio>
     </div>
+    <script src="CanvasSize.js"></script>
     <script src="Animation3.js"></script>
     <script src="DanceColor.js"></script>
 </body>
