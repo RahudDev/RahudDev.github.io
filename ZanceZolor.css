@@ -1,15 +1,15 @@
 html, body {
     margin: 0;
     padding: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     overflow: auto; /* Allows scrolling if content overflows */
     font-family: 'Algerian', sans-serif; /* It's good practice to include fallback fonts */
 }
 
 body {
-    position: center; /* Set body as relative for absolute positioning of buttons */
-    display: center;
+    position: relative; /* Set body as relative for absolute positioning of buttons */
+    display: flex;
     justify-content: center;
     align-items: center;
     background-color: #f8f2f2; /* Optional: Adds a base color */
