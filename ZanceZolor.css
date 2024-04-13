@@ -5,7 +5,7 @@ body {
     height: 100%;
     overflow: auto; /* Allows scrolling if content overflows */
     font-family: Algerian; /* It's good practice to include fallback fonts */
-    position: relative; /* Set body as relative for absolute positioning of buttons */
+    position: fixed; /* Set body as relative for absolute positioning of buttons */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,7 +15,7 @@ body {
 
 
 #danceFloor {
-    position: relative; /* Ensure danceFloor is also relative for absolute positioning of buttons */
+    position: fixed; /* Ensure danceFloor is also relative for absolute positioning of buttons */
     width: 100vw; /* 100% of the viewport width */
     height: 100vh; /* 100% of the viewport height */
     display: flex;
